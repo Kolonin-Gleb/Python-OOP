@@ -65,4 +65,46 @@ print(Car.__dict__["color"])
 '''
 
 # step 7
+'''
+class Notes:
+    uid = 1005435
+    title = "Шутка"
+    author = "И.С. Бах"
+    pages = 2
+
+print(getattr(Notes, 'author'))
+'''
+
+# step 9
+'''
+class Figure:
+    type_fig = 'ellipse'
+    color = 'red'
+
+fig1 = Figure()
+fig1.start_pt = (10, 5)
+fig1.end_pt = (100, 20)
+fig1.color = 'blue'
+del fig1.color
+
+print(*fig1.__dict__)
+'''
+
+# step 10
+'''
+class Person:
+    name = 'Сергей Балакирев'
+    job = 'Программист'
+    city = 'Москва'
+
+p1 = Person()
+print('job' in p1.__dict__)
+'''
+
+'''
+class Point:
+    tp = 1
+
+print(Point.__dict__)
+'''
 
